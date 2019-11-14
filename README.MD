@@ -42,7 +42,9 @@ $ cd infinibattle-giuseppe
 $ python3 evolve-minimal.py 
 ```
 	
-This should result in two files 'the_config.dump' and 'the_genome.dump'. If StarterBot.py is ran without arguments these files are automatically loaded.
+This should result in two files `the_config.dump` and `the_genome.dump`, containing a pickled configuration based on `infinibattle-giuseppe/config-feedforward` and the winning genome, respectively.
+
+If `python3 StarterBot.py` is ran without arguments it automatically attempts to load those two files.
 
 ## Publish
 
