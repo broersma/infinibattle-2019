@@ -1,0 +1,42 @@
+[package]
+name = "visualizer-wasm"
+version = "0.1.0"
+authors = ["Wilco Kusee <wilcokusee@gmail.com>"]
+description = ""
+repository = ""
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+engine = { path = "../engine" }
+
+rand = "0.6.5"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+pcg_rand = "0.10.1"
+js-sys = "0.3"
+console_error_panic_hook = { version = "0.1.1", optional = true }
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "console",
+    "CanvasRenderingContext2d",
+    "Document",
+    "Element",
+    "HtmlCanvasElement",
+    "Node",
+    "Window",
+]
+
+[dependencies.wasm-bindgen]
+version = "0.2.46"
+features = ["serde-serialize"]

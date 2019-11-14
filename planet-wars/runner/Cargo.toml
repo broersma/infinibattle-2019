@@ -1,0 +1,13 @@
+[package]
+name = "runner"
+version = "0.1.0"
+authors = ["Wilco Kusee <wilcokusee@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+engine = { path = "../engine" }
+
+clap = "2.32.0"
+rand = "0.6.5"
+if_chain = "0.1.3"

@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "engine",
+    "runner",
+    "visualizer-wasm",
+]
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
