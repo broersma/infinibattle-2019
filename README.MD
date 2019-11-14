@@ -18,7 +18,17 @@ The real Giuseppe is a simple bot which is added as an exploiter so evolution go
 
 ### Configure
 
-Adjust the number of iterations in evolve-minimal.py at this line:
+Configure python-neat in `infinibattle-giuseppe/config-feedforward`. Immediately interesting settings are:
+
+- pop_size - Number of genomes per generation.
+- no_fitness_termination - If true fitness_criterion is ignored.
+- fitness_criterion + fitness_threshold - Immediately finish when a single genome achieves this. Gotta be pretty sure about your fitness function's effectiveness, or else you might accidently end up with a winning genome who was just lucky for one generation.
+- num_inputs - Number of inputs, in case you want to modify this in `infinibattle-giuseppe/StarterBot.py`.
+- num_outputs - Number of outputs, in case you want to modify this in `infinibattle-giuseppe/StarterBot.py`.
+
+Check out [the docs](https://neat-python.readthedocs.io/en/latest/config_file.html) for more information.
+
+Adjust the maximum number of generations in `infinibattle-giuseppe/evolve-minimal.py` at this line:
 ```python
 winner = p.run(eval_genomes, 100)
 ```
