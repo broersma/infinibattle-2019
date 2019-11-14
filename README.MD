@@ -10,7 +10,11 @@ Neato (infinibattle-giuseppe) has to play against itself and against "The real G
 
 The real Giuseppe is a simple bot which is added as an exploiter so evolution goes in the right direction.
 
-## Running
+## Usage
+
+### Requirements
+- Python 3.x
+- Rust 1.38+
 
 ### Configure
 
