@@ -10,7 +10,7 @@ Neato (infinibattle-giuseppe) has to play against itself and against "The real G
 
 "The real Giuseppe" is a simple bot which is added as an "exploiter"[1] so evolution goes in the right direction.
 
-[1] Not sure if this is an actual exploiter, I just read about it in the context of AlphaStar, and it sounded cool so now I'm using it too.
+*[1] Not sure if this is an actual exploiter, I just read about it in the context of AlphaStar, and it sounded cool so now I'm using it too.*
 
 ## Background
 
@@ -35,7 +35,7 @@ The neural network has 1 output which is interpreted as a weighting for allocati
 - Improving the fitness function. The fitness function is now defined as the per-match-average game score (planet+ship health / total planet+ship health) in a full competition between a generation's genomes combined with an instance of "The real Giuseppe". This means the fitness function is optimal when a bot accidentally wins all matches against its opponents within a generation, however, a theoretically optimal fitness function would only reach its maximum for a bot that displays global optimal play. It might be better to mix in other variables into the fitness function like total rounds played (which we probably would like to minimize).
 - Tweaking the python-neat configuration to better fit the neural network we want to create.
 
-[2] Graph Neural Networks are a generalization of Convolutional Neural Networks popularly used for image processing. This article seems a good introduction to Graph Neural Networks: [A Comprehensive Survey on Graph NeuralNetworks](https://arxiv.org/pdf/1901.00596.pdf).
+*[2] Graph Neural Networks are a generalization of Convolutional Neural Networks popularly used for image processing. This article seems a good introduction to Graph Neural Networks: [A Comprehensive Survey on Graph NeuralNetworks](https://arxiv.org/pdf/1901.00596.pdf).*
 
 ## Usage
 
